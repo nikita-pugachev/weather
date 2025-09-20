@@ -8,3 +8,7 @@
 
 ## О проекте
 Проект представляет собой сайт для просмотра прогноза погоды. В настоящий момент проект находится на стадии разработки
+
+## Связь с разработчиками
+* nikita-pugachev: [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/RUSSS1NG)
+* DARRR1NG: [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/DashaPeachas)
