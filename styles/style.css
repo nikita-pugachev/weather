@@ -126,6 +126,7 @@ input {
     border: none;
     height: 44px;
     width: 252px;
+    border-left: solid 20px transparent;
     border-radius: var(--border-radius);
     font-family: var(--font-family);
     font-size: 32px;
