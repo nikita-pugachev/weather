@@ -1,0 +1,119 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--bg-color);
+}
+
+.weather-widget {
+    min-width: 1000px;
+    min-height: 600px;
+    margin-block-start: 180px;
+    background-color: var(--main-bg-color);
+    border-radius: var(--border-radius);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-inline: 55px;
+    min-height: 100px;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    background-color: var(--block-bg-color);
+}
+
+.title {
+    font-family: var(--font-family), sans-serif;
+    font-size: 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.weather-data-container {
+    min-width: 395px;
+    min-height: 385px;
+    margin-block: 50px;
+    border-radius: var(--border-radius);
+    background-color: var(--block-bg-color);
+    padding-block: 25px;
+    padding-inline: 30px;
+}
+
+.location-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 20px;
+}
+
+.city {
+    font-size: 48px;
+}
+
+.time {
+    font-size: 32px;
+}
+
+.weather-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-info {
+    font-size: 40px;
+    line-height: 32px;
+}
+
+.weather-image-container {
+    max-width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-stat-value {
+    font-size: 32px;
+}
+
+.weather-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.weather-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--block-bg-color);
+    max-height: 55px;
+    border-radius: 20px;
+    padding-inline: 15px;
+    font-size: 36px;
+}
+
+.footer-text {
+    color: #FFFFFF;
+    font-size: 20px;
+}
