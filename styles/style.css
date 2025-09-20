@@ -45,6 +45,7 @@
     background-color: var(--block-bg-color);
     padding-block: 25px;
     padding-inline: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .location-info-container {
@@ -108,9 +109,10 @@
     align-items: center;
     background-color: var(--block-bg-color);
     max-height: 55px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-inline: 15px;
     font-size: 36px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .footer-text {
