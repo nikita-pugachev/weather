@@ -40,12 +40,12 @@ const weatherCodeDescriptions = {
 };
 
 export function getWeatherIconPath(code) {
-    if ([0, 1].includes(code)) return './svg/sunny.svg';
-    if ([2, 3].includes(code)) return './svg/cloudy.svg';
-    if ([45, 48].includes(code)) return './svg/fog.svg';
-    if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return './svg/rain.svg';
-    if ([71, 73, 75, 77, 85, 86].includes(code)) return './svg/snow.svg';
-    if ([95, 96, 99].includes(code)) return 'svg/surface1.svg';
+    if ([0, 1].includes(code)) return '../svg/sunny.svg';
+    if ([2, 3].includes(code)) return '../svg/cloudy.svg';
+    if ([45, 48].includes(code)) return '../svg/fog.svg';
+    if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return '../svg/rainy.svg';
+    if ([71, 73, 75, 77, 85, 86].includes(code)) return '../svg/snow.svg';
+    if ([95, 96, 99].includes(code)) return '../svg/surface1.svg';
 }
 
 export async function getWeather() {
