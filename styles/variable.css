@@ -1,7 +1,8 @@
 :root {
     --bg-color: #495E93;
     --main-bg-color: #CFDBFA;
-    --block-bg-color: #E3E8F1;
+    --header-bg-color: #E3E8F1;
+    --block-bg-color: #FFFFFF;
     --main-opacity: 0.7;
     --font-family: 'Itim', sans-serif;
     --border-radius: 55px;

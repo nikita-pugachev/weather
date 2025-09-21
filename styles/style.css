@@ -24,7 +24,7 @@
     min-height: 100px;
     border-top-right-radius: var(--border-radius);
     border-top-left-radius: var(--border-radius);
-    background-color: var(--block-bg-color);
+    background-color: var(--header-bg-color);
 }
 
 .title {
@@ -40,6 +40,9 @@
 }
 
 .weather-data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     min-width: 395px;
     min-height: 385px;
     margin-block: 50px;
@@ -89,10 +92,17 @@
 }
 
 .weather-stat-item {
+    min-height: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.weather-image-list {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .weather-stat-value {
@@ -102,15 +112,14 @@
 .weather-list {
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 22px
 }
 
 .weather-list-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--block-bg-color);
-    max-height: 55px;
+    gap: 20px;
     border-radius: 10px;
     padding-inline: 15px;
     font-size: 36px;
