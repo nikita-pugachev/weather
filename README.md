@@ -1,4 +1,4 @@
-# WEATHER
+# ⛅ WEATHER
 📌[Проект на GitHub](https://github.com/nikita-pugachev/weather.git)
 
 🌐[Проект на GitHub Pages](https://nikita-pugachev.github.io/weather/)
@@ -31,7 +31,11 @@
 ### 💻 Логика программы
 Для того, чтобы реализовать полноценно функционирующий сайт для просмотра прогноза погоды, необходимо задействовать API, с которого мы получим необходимые данные. Для нашего сайта использовались следующие API:
 
-* ```https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json```. Данный API принимает в значение фильтра город и возвращает его географическую ширину и долготу. В проекте в значение фильтра передается переменная, отвечающая за ввод пользователя в форму.
+* 🔑 Геокодирование города
+```bash
+    https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json
+```
+Данный API принимает в значение фильтра город и возвращает его географическую ширину и долготу. В проекте в значение фильтра передается переменная, отвечающая за ввод пользователя в форму.
 
 <div align="center">
     <img src="./images/documentation_1.png">
@@ -40,7 +44,11 @@
 
 [Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
 
-* ```https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=temperature_2m,precipitation_probability,surface_pressure,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,windspeed_10m_max&timezone=auto```. Данный API необходим для того, чтобы запрашивать данные о погоде. В проекте в значение передается географическая долгода и широта, полученная из ```Geocoding API Open-Meteo```. Этот API возвращает данные в формате json, который легко спользовать в JavaScript для отображения статистики о погоде.
+* 📧 Получение данных погоды
+```bash
+https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=temperature_2m,precipitation_probability,surface_pressure,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,windspeed_10m_max&timezone=auto
+```
+Данный API необходим для того, чтобы запрашивать данные о погоде. В проекте в значение передается географическая долгода и широта, полученная из ```Geocoding API Open-Meteo```. Этот API возвращает данные в формате json, который легко спользовать в JavaScript для отображения статистики о погоде.
 
 <div align="center">
     <img src="./images/documentation_2.png">
