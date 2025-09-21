@@ -32,7 +32,9 @@
 <div align="center">
     <img src="./images/documentation_1.png">
 </div>
-Больше о данном API можно узнать по [ссылке](https://open-meteo.com/en/docs/geocoding-api)
+Больше о данном API можно узнать по ссылке:
+
+[Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
 
 * ```https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=temperature_2m,precipitation_probability,surface_pressure,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,windspeed_10m_max&timezone=auto```. Данный API необходим для того, чтобы запрашивать данные о погоде. В проекте в значение передается географическая долгода и широта, полученная из ```Geocoding API Open-Meteo```. Этот API возвращает данные в формате json, который легко спользовать в JavaScript для отображения статистики о погоде.
 
