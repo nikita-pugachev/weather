@@ -40,11 +40,11 @@ const weatherCodeDescriptions = {
 };
 
 export function getWeatherIconPath(code) {
-    if ([0, 1].includes(code)) return 'svg/Sunny.svg';
-    if ([2, 3].includes(code)) return 'svg/Cloudy.svg';
-    if ([45, 48].includes(code)) return 'svg/Fog.svg';
-    if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return 'svg/Rain.svg';
-    if ([71, 73, 75, 77, 85, 86].includes(code)) return 'svg/Snow.svg';
+    if ([0, 1].includes(code)) return './svg/sunny.svg';
+    if ([2, 3].includes(code)) return './svg/cloudy.svg';
+    if ([45, 48].includes(code)) return './svg/fog.svg';
+    if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return './svg/rain.svg';
+    if ([71, 73, 75, 77, 85, 86].includes(code)) return './svg/snow.svg';
     if ([95, 96, 99].includes(code)) return 'svg/surface1.svg';
 }
 
@@ -85,7 +85,7 @@ export async function getWeather() {
             const weatherListItems = document.querySelectorAll('.weather-list-item');
             const dailyDates = data.daily.time;
             const dailyTemps = data.daily.temperature_2m_max;
-            const dailyCodes = data.daily.weathercode; // добавлено получение кодов
+            const dailyCodes = data.daily.weathercode;
 
             weatherListItems.forEach((item, i) => {
                 const dayIndex = i + 1;
@@ -96,12 +96,12 @@ export async function getWeather() {
                 ) {
                     const titleDay = item.querySelector('.title-day');
                     const temperatureDay = item.querySelector('.temperature-day');
-                    const imageDay = item.querySelector('.weather-image-list'); // исправлено получение img
+                    const imageDay = item.querySelector('.weather-image-list');
 
                     titleDay.textContent = dailyDates[dayIndex];
                     temperatureDay.textContent = `${Math.round(dailyTemps[dayIndex])}°C`;
-                    imageDay.src = getWeatherIconPath(dailyCodes[dayIndex]); // добавлено изменение src
-                    imageDay.alt = weatherCodeDescriptions[dailyCodes[dayIndex]] || "weather icon"; // для доступности
+                    imageDay.src = getWeatherIconPath(dailyCodes[dayIndex]);
+                    imageDay.alt = weatherCodeDescriptions[dailyCodes[dayIndex]] || "weather icon";
                 }
             });
         })
