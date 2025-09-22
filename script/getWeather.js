@@ -49,8 +49,8 @@ export function getWeatherIconPath(code) {
 }
 
 export async function getWeather() {
-    let latitude = 52.52;
-    let longitude = 13.41;
+    let latitude = 55.75222;
+    let longitude = 37.61556;
 
     const city = cityNameInput.value.trim();
 
